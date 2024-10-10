@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bundle & Save Accordion</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Bundle & Save</h1>
+
+    <div class="accordion">
+    <!-- First Accordion -->
+    <div class="accordion-item">
+        <input type="radio" id="onePair" name="bundle" value="195" onclick="selectAccordion(0, 195)">
+        <label for="onePair">1 Pair</label>
+        <span class="price">DKK 195.00</span>
+        <span class="discount">50% OFF</span>
+        <div class="content">
+        <div class="selectors">
+            <div class="pair-options">
+            <span>#1</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Second Accordion -->
+    <div class="accordion-item open selected">
+        <input type="radio" id="twoPair" name="bundle" value="345" onclick="selectAccordion(1, 345)" checked>
+        <label for="twoPair">2 Pair</label>
+        <span class="price">DKK 345.00</span>
+        <span class="discount">40% OFF (Most Popular)</span>
+        <div class="content">
+        <div class="selectors">
+            <div class="pair-options">
+            <span>#1</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+            <div class="pair-options">
+            <span>#2</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Third Accordion -->
+    <div class="accordion-item">
+        <input type="radio" id="threePair" name="bundle" value="528" onclick="selectAccordion(2, 528)">
+        <label for="threePair">3 Pair</label>
+        <span class="price">DKK 528.00</span>
+        <span class="discount">60% OFF</span>
+        <div class="content">
+        <div class="selectors">
+            <div class="pair-options">
+            <span>#1</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+            <div class="pair-options">
+            <span>#2</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+            <div class="pair-options">
+            <span>#3</span>
+            <select>
+                <option value="S">Size S</option>
+                <option value="M">Size M</option>
+                <option value="L">Size L</option>
+            </select>
+            <select>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Total Price and Add to Cart -->
+    <div class="total">
+    <span>
+        <p>Free 2 Day Shipping</p>
+        <p>Total: DKK <span id="totalPrice">345.00</span></p>
+    </span>
+    <button onclick="handleSubmit()">Add to Cart</button>
+    <div id="confirmationMessage" class="confirmation" style="display: none;">
+        <p><span class="tick-mark">✔</span> Items Added!</p>
+    </div>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>

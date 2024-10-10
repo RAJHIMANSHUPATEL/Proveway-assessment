@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2a9d8f;
+    font-weight: 700;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    background: #f9f9f9;
+}
+
+.accordion-item.selected {
+    background-color: #e6f4f1;
+    border-color: #2a9d8f;
+}
+
+.accordion-item label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.accordion-item .price {
+    margin-left: auto;
+    font-size: 14px;
+    color: #333;
+}
+
+.discount {
+    color: #ff6347;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.content {
+    display: none;
+    padding-top: 10px;
+}
+
+.accordion-item.open .content {
+    display: block;
+}
+
+.selectors {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pair-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pair-options span {
+    margin-right: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: center;
+}
+.total span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total p {
+    color: #06754e;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+.confirmation {
+    margin-top: 15px;
+    color: #2a9d8f;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tick-mark {
+    color: green;
+    font-size: 24px;
+    margin-right: 10px;
+}
